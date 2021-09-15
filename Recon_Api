@@ -1,0 +1,64 @@
+-Leaked Token via GitHub Repository lead to Exposed more than 25000 Emails :
+
+Tips:
+
+Github_File:The file must be no more than 2-3 years old.
+File_Owner:Employee,Admin,Developer work in the company you hunt for.
+
+
+1-Find token and didn't know how to use it:
+-In Google: {company_name api documentation}.
+-Read about token or api_key and how to use them.
+-Exploit and check what you get.
+
+
+Github_Dorks:
+
+-For aws:
+org:Target "bucket_name"
+org:Target "aws_access_key"
+org:Target "aws_secret_key"
+org:Target "S3_BUCKET"
+org:Target "S3_ACCESS_KEY_ID"
+org:Target "S3_SECRET_ACCESS_KEY"
+org:Target "S3_ENDPOINT"
+org:Target "AWS_ACCESS_KEY_ID"
+org:Target "list_aws_accounts"
+
+-Others:
+
+“target.com” send_keys
+“target.com” ldap
+“target.com” pwd
+“target.com” private_key
+“target.com” password
+“target.com” api_key
+“target.com” apikey
+“target.com” jira_password
+“target.com” root_password
+“target.com” access_token
+“target.com” config
+“target.com” client_secret
+“target.com” user auth
+“target.com”  -----BEGIN DSA PRIVATE KEY-----
+“target.com”  -----BEGIN EC PRIVATE KEY-----
+“target.com”  -----BEGIN OPENSSH PRIVATE KEY-----
+“target.com”  -----BEGIN PGP PRIVATE KEY BLOCK-----
+
+## Extension based search:
+
+- extension:pem private
+- extension:ppk private
+- extension:sql mysql dump
+- extension:sql mysql dump password
+- extension:json api.forecast.io
+
+
+## Automated Tools:
+
+1. [TruffleHog](https://github.com/dxa4481/truffleHog)
+2. [WatchTower](https://radar.nightfall.ai/)
+
+-Thanks for @Mr._fr3qu3n533 @orwa
+
+
